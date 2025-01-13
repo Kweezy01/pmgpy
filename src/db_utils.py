@@ -6,6 +6,7 @@ Handles connections to the Aiven MySQL database using SQLAlchemy + PyMySQL.
 
 import os
 from sqlalchemy import create_engine
+from sqlalchemy import text
 from sqlalchemy.orm import sessionmaker
 from dotenv import load_dotenv
 
@@ -64,6 +65,7 @@ def create_tables():
     #
     with open("db/schema.sql", "r", encoding="utf-8") as f:
         raw_sql = f.read()
+    statements = raw_sql.split(";")  # Split on semicolons if you have multiple statements
     with engine.connect() as conn:
         for statement in raw_sql.split(";"):
             stmt = statement.strip()
