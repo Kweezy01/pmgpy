@@ -1,20 +1,20 @@
 "sep=,"
 ImageUrl,ListingId,StockNumber,RegistrationNumber,VehicleCategory,VehicleSubCategory,Make,Model,Variant,RegistrationYear,PriceFormatted,MileageValue,Status,LastModified,CreateDate,ListDate,Age,PriceRating
-https://img.autotrader.co.za/35587879/Crop160x120,27679054,UE2421,,Cars,,Volkswagen,Polo Vivo,Hatch 1.4 Trendline,2023,R 209 900,30000,Active,2025/01/15 11:15:10,2024/09/11 14:03:15,2024/09/11 14:03:15,134,Great Price
-https://img.autotrader.co.za/34592440/Crop160x120,27777353,NE5357,,Cars,,Suzuki,Swift,1.2 GLX CVT,2025,R 299 900,2000,Active,2025/01/09 13:59:12,2024/11/15 16:20:07,2024/11/15 16:20:07,69,No Rating
-https://img.autotrader.co.za/34592575/Crop160x120,27777368,NE5370,,Cars,,Suzuki,S-Presso,1.0 GL+,2025,R 184 900,2000,Active,2025/01/09 13:57:46,2024/11/15 16:26:42,2024/11/15 16:26:42,69,No Rating
-https://img.autotrader.co.za/34592841/Crop160x120,27777380,NE5387,,Cars,,Suzuki,Jimny,1.5 Glx Allgrip 5-door Auto,2025,R 499 900,2500,Active,2025/01/09 13:58:09,2024/11/15 16:30:28,2024/11/15 16:30:28,69,No Rating
-https://img.autotrader.co.za/34696838/Crop160x120,27784926,UE2463,,Cars,,Ford,Ranger,2.0 Sit Single Cab XL 4x4 Auto,2024,R 499 900,1500,Active,2025/01/14 07:39:05,2024/11/21 08:43:43,2024/11/21 08:43:43,63,Great Price
-https://img.autotrader.co.za/34708562/Crop160x120,27785793,UE2464,,Cars,,Ford,Ranger,2.0 Sit Single Cab XL 4x4 Manual,2024,R 489 900,1500,Active,2025/01/14 07:40:37,2024/11/21 14:04:51,2024/11/21 14:04:51,63,Fair Price
-https://img.autotrader.co.za/34913045/Crop160x120,27800791,UE2476,,Cars,,Jeep,Grand Cherokee,3.0CRD Overland,2015,R 249 900,178000,Active,2025/01/14 07:43:29,2024/12/03 07:06:02,2024/12/03 07:06:02,51,Great Price
-https://img.autotrader.co.za/35072134/Crop160x120,27812350,UE2485,,Cars,,Suzuki,Super Carry,1.2,2023,R 149 900,20000,Active,2025/01/13 12:16:52,2024/12/10 11:09:10,2024/12/10 11:09:10,44,Great Price
-https://img.autotrader.co.za/35162173/Crop160x120,27818501,UE2486,,Cars,,Nissan,NP300 Hardbody,2.4 4x4 Mid,2018,R 189 900,145000,Active,2024/12/18 07:56:16,2024/12/13 12:52:42,2024/12/13 12:52:42,41,No Rating
-https://img.autotrader.co.za/35163143/Crop160x120,27818562,UE2488,,Cars,,Suzuki,Swift,1.4T Sport,2023,R 369 900,24000,Active,2025/01/13 12:10:44,2024/12/13 13:19:32,2024/12/13 13:19:32,41,No Rating
-https://img.autotrader.co.za/35332357/Crop160x120,27830507,UE2489,,Cars,,Suzuki,Vitara,1.4T GLX Auto,2023,R 359 900,11000,Active,2025/01/13 10:26:26,2024/12/27 09:05:27,2024/12/27 09:05:27,27,Great Price
-https://img.autotrader.co.za/35396060/Crop160x120,27835428,UE2500,,Cars,,Ford,Everest,2.0 Biturbo Sport,2024,R 859 900,25000,Active,2025/01/13 12:12:53,2025/01/04 17:43:43,2025/01/04 17:43:43,19,No Rating
-https://img.autotrader.co.za/35396185/Crop160x120,27835435,UE2499,,Cars,,Toyota,Fortuner,3.0D-4D 4x4 Ltd Edition,2013,R 349 900,175000,Active,2025/01/13 10:24:55,2025/01/04 17:59:35,2025/01/04 17:59:35,19,No Rating
-https://img.autotrader.co.za/35408622/Crop160x120,27836432,UE2502,,Cars,,Suzuki,Jimny,1.5 GLX AllGrip,2020,R 319 900,63000,Active,2025/01/06 14:43:47,2025/01/06 14:43:47,2025/01/06 14:43:47,17,Fair Price
-https://img.autotrader.co.za/31103861/Crop160x120,27841161,UE2501,,Cars,,Suzuki,Swift,1.2 GA,2023,R 184 900,10000,Active,2025/01/09 13:32:45,2025/01/09 13:32:45,2025/01/09 13:32:45,14,Fair Price
-https://img.autotrader.co.za/35560017/Crop160x120,27847122,UE2505,,Cars,,Fiat,500X,1.4T Connect,2024,R 299 900,11000,Active,2025/01/17 07:37:42,2025/01/14 12:20:44,2025/01/14 12:20:44,9,No Rating
-https://img.autotrader.co.za/35618445/Crop160x120,27852923,CON,,Cars,,Suzuki,Grand Vitara,1.5 GL Auto,2023,R 319 900,31000,Active,2025/01/16 13:13:25,2025/01/16 13:13:25,2025/01/16 13:13:25,7,Great Price
-https://img.autotrader.co.za/35634304/Crop160x120,27853972,UE2494,,Cars,,Mazda,CX-5,2.2DE AWD Akera,2018,R 349 900,118000,Active,2025/01/17 07:27:25,2025/01/17 07:27:25,2025/01/17 07:27:25,6,Fair Price
+https://img.autotrader.co.za/35587879/Crop160x120,27679054,UE2421,,Cars,,Volkswagen,Polo Vivo,Hatch 1.4 Trendline,2023,R 209 900,30000,Active,2025/01/15 11:15:10,2024/09/11 14:03:15,2024/09/11 14:03:15,138,Great Price
+https://img.autotrader.co.za/34592440/Crop160x120,27777353,NE5357,,Cars,,Suzuki,Swift,1.2 GLX CVT,2025,R 299 900,2000,Active,2025/01/09 13:59:12,2024/11/15 16:20:07,2024/11/15 16:20:07,73,No Rating
+https://img.autotrader.co.za/34592575/Crop160x120,27777368,NE5370,,Cars,,Suzuki,S-Presso,1.0 GL+,2025,R 184 900,2000,Active,2025/01/09 13:57:46,2024/11/15 16:26:42,2024/11/15 16:26:42,73,No Rating
+https://img.autotrader.co.za/34592841/Crop160x120,27777380,NE5387,,Cars,,Suzuki,Jimny,1.5 Glx Allgrip 5-door Auto,2025,R 499 900,2500,Active,2025/01/09 13:58:09,2024/11/15 16:30:28,2024/11/15 16:30:28,73,No Rating
+https://img.autotrader.co.za/34696838/Crop160x120,27784926,UE2463,,Cars,,Ford,Ranger,2.0 Sit Single Cab XL 4x4 Auto,2024,R 499 900,1500,Active,2025/01/14 07:39:05,2024/11/21 08:43:43,2024/11/21 08:43:43,67,Great Price
+https://img.autotrader.co.za/34708562/Crop160x120,27785793,UE2464,,Cars,,Ford,Ranger,2.0 Sit Single Cab XL 4x4 Manual,2024,R 489 900,1500,Active,2025/01/14 07:40:37,2024/11/21 14:04:51,2024/11/21 14:04:51,67,Fair Price
+https://img.autotrader.co.za/34913045/Crop160x120,27800791,UE2476,,Cars,,Jeep,Grand Cherokee,3.0CRD Overland,2015,R 249 900,178000,Active,2025/01/14 07:43:29,2024/12/03 07:06:02,2024/12/03 07:06:02,55,Great Price
+https://img.autotrader.co.za/35072134/Crop160x120,27812350,UE2485,,Cars,,Suzuki,Super Carry,1.2,2023,R 149 900,20000,Active,2025/01/13 12:16:52,2024/12/10 11:09:10,2024/12/10 11:09:10,48,Great Price
+https://img.autotrader.co.za/35162173/Crop160x120,27818501,UE2486,,Cars,,Nissan,NP300 Hardbody,2.4 4x4 Mid,2018,R 189 900,145000,Active,2024/12/18 07:56:16,2024/12/13 12:52:42,2024/12/13 12:52:42,45,No Rating
+https://img.autotrader.co.za/35163143/Crop160x120,27818562,UE2488,,Cars,,Suzuki,Swift,1.4T Sport,2023,R 369 900,24000,Active,2025/01/13 12:10:44,2024/12/13 13:19:32,2024/12/13 13:19:32,45,No Rating
+https://img.autotrader.co.za/35332357/Crop160x120,27830507,UE2489,,Cars,,Suzuki,Vitara,1.4T GLX Auto,2023,R 359 900,11000,Active,2025/01/13 10:26:26,2024/12/27 09:05:27,2024/12/27 09:05:27,31,Great Price
+https://img.autotrader.co.za/35396060/Crop160x120,27835428,UE2500,,Cars,,Ford,Everest,2.0 Biturbo Sport,2024,R 859 900,25000,Active,2025/01/13 12:12:53,2025/01/04 17:43:43,2025/01/04 17:43:43,23,No Rating
+https://img.autotrader.co.za/35396185/Crop160x120,27835435,UE2499,,Cars,,Toyota,Fortuner,3.0D-4D 4x4 Ltd Edition,2013,R 349 900,175000,Active,2025/01/13 10:24:55,2025/01/04 17:59:35,2025/01/04 17:59:35,23,No Rating
+https://img.autotrader.co.za/35408622/Crop160x120,27836432,UE2502,,Cars,,Suzuki,Jimny,1.5 GLX AllGrip,2020,R 319 900,63000,Active,2025/01/06 14:43:47,2025/01/06 14:43:47,2025/01/06 14:43:47,21,Fair Price
+https://img.autotrader.co.za/31103861/Crop160x120,27841161,UE2501,,Cars,,Suzuki,Swift,1.2 GA,2023,R 184 900,10000,Active,2025/01/09 13:32:45,2025/01/09 13:32:45,2025/01/09 13:32:45,18,Fair Price
+https://img.autotrader.co.za/35560017/Crop160x120,27847122,UE2505,,Cars,,Fiat,500X,1.4T Connect,2024,R 299 900,11000,Active,2025/01/17 07:37:42,2025/01/14 12:20:44,2025/01/14 12:20:44,13,No Rating
+https://img.autotrader.co.za/35618445/Crop160x120,27852923,CON,,Cars,,Suzuki,Grand Vitara,1.5 GL Auto,2023,R 319 900,31000,Active,2025/01/16 13:13:25,2025/01/16 13:13:25,2025/01/16 13:13:25,11,Great Price
+https://img.autotrader.co.za/35634304/Crop160x120,27853972,UE2494,,Cars,,Mazda,CX-5,2.2DE AWD Akera,2018,R 349 900,118000,Active,2025/01/17 07:27:25,2025/01/17 07:27:25,2025/01/17 07:27:25,10,Fair Price

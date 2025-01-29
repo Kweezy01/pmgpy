@@ -30,42 +30,35 @@ PINNACLE_SCHEMA = [
     "Profiles",
 ]
 
-def read_dms_dict(src_folder: str) -> dict:
-    """
-    Reads pmg_dms_data.csv => {stockNum -> rowDict} with PInnacle columns only.
-    """
-    path = os.path.join(src_folder, "pmg_dms_data.csv")
-    if not os.path.isfile(path):
-        print(f"[WARN] {path} not found => returning empty DMS.")
+def read_dms_dict(dms_file: str) -> dict:
+    """Reads pmg_dms_data.csv -> {stockNum -> rowData} with only relevant columns."""
+    if not os.path.isfile(dms_file):
+        print(f"[WARN] Missing DMS file: {dms_file}")
         return {}
 
-    df_temp = pd.read_csv(path, nrows=1)
-    actual_cols = df_temp.columns.tolist()
-    wanted = []
-    for c in PINNACLE_SCHEMA:
-        if c == "Customer Ordered" and "Customer Order" in actual_cols:
-            wanted.append("Customer Order")
-        elif c in actual_cols:
-            wanted.append(c)
+    # Try reading first few rows and check structure
+    print(f"[DEBUG] Checking DMS file structure: {dms_file}")
+    df_preview = pd.read_csv(dms_file, nrows=5)  # Read first 5 rows only
+    print(df_preview)
 
-    df = pd.read_csv(path, usecols=wanted)
-    if "Customer Order" in df.columns:
-        df.rename(columns={"Customer Order": "Customer Ordered"}, inplace=True)
+    # Actual reading logic
+    df = pd.read_csv(dms_file)
+    print(f"[DEBUG] DMS Data Loaded: {df.shape}")  # Print shape
 
-    # reorder & strip
-    final_cols = [c for c in PINNACLE_SCHEMA if c in df.columns]
-    df = df[final_cols]
-    for col in df.select_dtypes(include=['object']).columns:
-        df[col] = df[col].astype(str).str.strip()
+    if "Stock Number" not in df.columns:
+        print("[ERROR] 'Stock Number' column is missing in DMS file! Check column names.")
+        print(f"Available columns: {df.columns.tolist()}")
+        return {}
 
+    # Convert to dictionary (Stock Number as key)
     dms_map = {}
-    if "Stock Number" in df.columns:
-        for _, row in df.iterrows():
-            sn = str(row["Stock Number"]).strip()
-            if sn:
-                dms_map[sn] = row.to_dict()
+    for _, row in df.iterrows():
+        sn = row["Stock Number"]
+        if sn:
+            dms_map[sn] = dict(row)
 
     return dms_map
+
 
 
 def read_autotrader_data(src_folder: str):

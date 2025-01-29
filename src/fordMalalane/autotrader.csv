@@ -1,14 +1,17 @@
 "sep=,"
 ImageUrl,ListingId,StockNumber,RegistrationNumber,VehicleCategory,VehicleSubCategory,Make,Model,Variant,RegistrationYear,PriceFormatted,MileageValue,Status,LastModified,CreateDate,ListDate,Age,PriceRating
-https://img.autotrader.co.za/33322372/Crop160x120,27686220,US1936,,Cars,,Toyota,Fortuner,2.4GD-6 Auto,2021,R 479 900,85500,Active,2024/10/23 12:28:19,2024/09/13 10:55:06,2024/09/13 10:55:06,123,Fair Price
-https://img.autotrader.co.za/33491038/Crop160x120,27686279,US1939,,Cars,,Ford,Ranger,2.0 Sit Double Cab XLT 4x4,2024,R 649 900,15400,Active,2024/11/06 12:21:07,2024/09/13 11:10:07,2024/09/13 11:10:07,123,Great Price
-https://img.autotrader.co.za/33323430/Crop160x120,27686292,US1940,,Cars,,Ford,Ranger,2.0 Sit Double Cab,2023,R 449 900,7500,Active,2024/11/06 12:22:10,2024/09/13 11:13:34,2024/09/13 11:13:34,123,Great Price
-https://img.autotrader.co.za/33323680/Crop160x120,27686327,US1941,,Cars,,Ford,PUMA,1.0T Titanium,2024,R 389 900,4000,Active,2024/10/23 12:29:57,2024/09/13 11:25:46,2024/09/13 11:25:46,123,Great Price
-https://img.autotrader.co.za/33324303/Crop160x120,27686355,US1942,,Cars,,Ford,Ranger,2.0 Sit Single Cab XL Auto,2024,R 479 900,20500,Active,2024/11/06 12:22:30,2024/09/13 11:38:08,2024/09/13 11:38:08,123,No Rating
-https://img.autotrader.co.za/33324566/Crop160x120,27686371,US1946,,Cars,,Ford,Ranger,2.0 Sit Single Cab XL Manual,2024,R 459 900,25500,Active,2024/11/06 12:22:58,2024/09/13 11:47:41,2024/09/13 11:47:41,123,No Rating
-https://img.autotrader.co.za/33324982/Crop160x120,27686402,US1969,,Cars,,Ford,Ranger,2.0 Sit Double Cab,2023,R 449 900,15100,Active,2024/11/06 12:24:53,2024/09/13 12:00:30,2024/09/13 12:00:30,123,Fair Price
-https://img.autotrader.co.za/33327488/Crop160x120,27686572,US1972,,Cars,,Ford,EcoSport,1.0T Trend,2021,R 209 900,106500,Active,2024/10/23 12:34:27,2024/09/13 13:01:30,2024/09/13 13:01:30,123,Great Price
-https://img.autotrader.co.za/34068286/Crop160x120,27741011,US1980,,Cars,,Ford,Ranger,2.0Bi-Turbo Double Cab 4x4 Raptor,2022,R 689 900,99500,Active,2024/11/06 12:25:40,2024/10/22 15:25:58,2024/10/22 16:16:22,84,Fair Price
-https://img.autotrader.co.za/34407291/Crop160x120,27765154,US1968,,Cars,,Ford,Kuga,2.0TDCi AWD Trend,2015,R 199 900,140000,Active,2024/11/07 14:59:22,2024/11/07 14:59:22,2024/11/07 14:59:22,68,Great Price
-https://img.autotrader.co.za/34435699/Crop160x120,27766927,US1987,,Cars,,Volkswagen,Polo Vivo,Hatch 1.4 Trendline,2023,R 209 900,24500,Active,2024/11/08 13:10:43,2024/11/08 13:10:43,2024/11/08 13:10:43,67,Great Price
-https://img.autotrader.co.za/34436317/Crop160x120,27766975,US1988,,Cars,,Volkswagen,Polo Vivo,Hatch 1.4 Trendline,2023,R 209 900,33000,Active,2024/11/12 12:20:21,2024/11/08 13:38:23,2024/11/08 13:38:23,67,Great Price
+https://img.autotrader.co.za/33491038/Crop160x120,27686279,US1939,,Cars,,Ford,Ranger,2.0 Sit Double Cab XLT 4x4,2024,R 649 900,15400,Active,2024/11/06 12:21:07,2024/09/13 11:10:07,2024/09/13 11:10:07,136,Great Price
+https://img.autotrader.co.za/33323430/Crop160x120,27686292,US1940,,Cars,,Ford,Ranger,2.0 Sit Double Cab,2023,R 449 900,7500,Active,2024/11/06 12:22:10,2024/09/13 11:13:34,2024/09/13 11:13:34,136,Great Price
+https://img.autotrader.co.za/33323680/Crop160x120,27686327,US1941,,Cars,,Ford,PUMA,1.0T Titanium,2024,R 389 900,4000,Active,2024/10/23 12:29:57,2024/09/13 11:25:46,2024/09/13 11:25:46,136,Great Price
+https://img.autotrader.co.za/33324303/Crop160x120,27686355,US1942,,Cars,,Ford,Ranger,2.0 Sit Single Cab XL Auto,2024,R 479 900,20500,Active,2024/11/06 12:22:30,2024/09/13 11:38:08,2024/09/13 11:38:08,136,No Rating
+https://img.autotrader.co.za/33324566/Crop160x120,27686371,US1946,,Cars,,Ford,Ranger,2.0 Sit Single Cab XL Manual,2024,R 459 900,25500,Active,2024/11/06 12:22:58,2024/09/13 11:47:41,2024/09/13 11:47:41,136,No Rating
+https://img.autotrader.co.za/33324982/Crop160x120,27686402,US1969,,Cars,,Ford,Ranger,2.0 Sit Double Cab,2023,R 449 900,15100,Active,2024/11/06 12:24:53,2024/09/13 12:00:30,2024/09/13 12:00:30,136,Fair Price
+https://img.autotrader.co.za/33327488/Crop160x120,27686572,US1972,,Cars,,Ford,EcoSport,1.0T Trend,2021,R 209 900,106500,Active,2024/10/23 12:34:27,2024/09/13 13:01:30,2024/09/13 13:01:30,136,Great Price
+https://img.autotrader.co.za/34068286/Crop160x120,27741011,US1980,,Cars,,Ford,Ranger,2.0Bi-Turbo Double Cab 4x4 Raptor,2022,R 689 900,99500,Active,2024/11/06 12:25:40,2024/10/22 15:25:58,2024/10/22 16:16:22,97,Fair Price
+https://img.autotrader.co.za/34407291/Crop160x120,27765154,US1968,,Cars,,Ford,Kuga,2.0TDCi AWD Trend,2015,R 199 900,140000,Active,2024/11/07 14:59:22,2024/11/07 14:59:22,2024/11/07 14:59:22,81,Great Price
+https://img.autotrader.co.za/34435699/Crop160x120,27766927,US1987,,Cars,,Volkswagen,Polo Vivo,Hatch 1.4 Trendline,2023,R 209 900,24500,Active,2024/11/08 13:10:43,2024/11/08 13:10:43,2024/11/08 13:10:43,80,Great Price
+https://img.autotrader.co.za/34436317/Crop160x120,27766975,US1988,,Cars,,Volkswagen,Polo Vivo,Hatch 1.4 Trendline,2023,R 209 900,33000,Active,2024/11/12 12:20:21,2024/11/08 13:38:23,2024/11/08 13:38:23,80,Great Price
+https://img.autotrader.co.za/35410727/Crop160x120,27836579,US1993,,Cars,,Honda,Jazz,1.2 Comfort,2020,R 199 900,46000,Active,2025/01/24 14:03:39,2025/01/06 15:51:12,2025/01/24 14:03:39,21,Fair Price
+https://img.autotrader.co.za/35610551/Crop160x120,27852374,US1994,,Cars,,BMW,1 Series,118i Sport Line,2021,R 449 900,67500,Active,2025/01/16 09:19:44,2025/01/16 09:17:23,2025/01/16 09:17:23,11,Fair Price
+https://img.autotrader.co.za/35788056/Crop160x120,27864896,US1890,,Cars,,Ford,Kuga,1.6T Trend,2014,R 189 900,91000,Active,2025/01/24 12:58:33,2025/01/24 12:58:33,2025/01/24 12:58:33,3,High Price
+https://img.autotrader.co.za/35788379/Crop160x120,27864926,US1984,,Cars,,Volkswagen,T-Cross,1.0TSI 85kW Comfortline,2023,R 349 900,8000,Active,2025/01/24 13:10:16,2025/01/24 13:10:16,2025/01/24 13:10:16,3,Great Price
