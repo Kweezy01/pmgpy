@@ -2,13 +2,10 @@
 """
 main.py
 
-Generates 'stockgpt.xlsx' with:
- - One sheet per dealership prefix (UF, UG, UA, UE, US)
- - 'to_be_removed' for website-only vehicles
- - 'to_dos' with a 'Completed?' column (choosing "Yes" turns row green).
-
-Suppresses OpenPyXL warnings and improves "Notes" column in `to_dos`
-to list all missing sites.
+Fixes:  
+ - Prevents KeyError for 'corporate_report'.  
+ - Ensures all sheets retain table formatting.  
+ - Business-ready charts for director meetings.  
 
 Usage:
   python -m stockgpt.main
@@ -17,79 +14,86 @@ Usage:
 import os
 import pandas as pd
 import warnings
-
 from openpyxl.utils import get_column_letter
-from openpyxl.worksheet.datavalidation import DataValidation
 from openpyxl.formatting.rule import FormulaRule
 from openpyxl.styles import PatternFill
-
+from openpyxl.chart import BarChart, Reference, PieChart
 from openpyxl.worksheet.table import Table, TableStyleInfo
+
 from utilities import clean_dataframe
-from .data_readers import (
-    read_dms_dict,
-    read_autotrader_data,
-    read_cars_data,
-    read_pmg_web_data,
-)
-from .transformations import (
-    build_master_df,
-    reorder_final_columns,
-    generate_todos
-)
+from .data_readers import read_dms_dict, read_autotrader_data, read_cars_data, read_pmg_web_data
+from .transformations import build_master_df, reorder_final_columns, generate_todos
 from .formatting import style_sheet, create_excel_table, auto_size_columns
 
-# Suppress OpenPyXL warnings about missing default styles
-warnings.simplefilter("ignore", UserWarning)
+warnings.simplefilter("ignore", UserWarning)  # Suppress OpenPyXL warnings
 
-# Prefixes mapped to dealer names
 DEALER_PREFIXES = {
     "Ford_Nelspruit":   "UF",
     "Ford_Mazda":       "UG",
     "Produkta_Nissan":  "UA",
-    "Suzuki_Nelspruit": "UE",  # forced is_on_cars="Yes"
+    "Suzuki_Nelspruit": "UE",
     "Ford_Malalane":    "US",
 }
 
-def style_to_dos_sheet(writer, sheet_name: str, df_todos: pd.DataFrame):
+def generate_corporate_report(writer, df_master):
     """
-    Creates a table, auto-sizes columns, adds data validation for 'Completed?' column,
-    and color-codes row green if 'Completed?' == 'Yes'.
+    Creates a 'corporate_report' sheet with key statistics and professional graphs.
     """
-    ws = writer.sheets[sheet_name]
+    ws = writer.book.create_sheet("corporate_report")
 
-    # 1) Turn data region into a table
-    create_excel_table(ws, df_todos, table_name="ToDosTable")
-    # 2) Auto-size columns
-    auto_size_columns(ws, df_todos)
+    # --- 📊 Key Metrics ---
+    total_dms = df_master[df_master["in_dms"]].shape[0]
+    total_cars = df_master[df_master["is_on_cars"] == "Yes"].shape[0]
+    total_autotrader = df_master[df_master["is_on_autotrader"] == "Yes"].shape[0]
+    total_pmgweb = df_master[df_master["is_on_pmgWeb"] == "Yes"].shape[0]
+    total_to_remove = df_master[df_master["in_dms"] == False].shape[0]
 
-    # 3) Data validation => "Yes"/"No" for 'Completed?' column
-    if "Completed?" in df_todos.columns:
-        rows_count = len(df_todos)
-        cols_count = len(df_todos.columns)
-        completed_ix = df_todos.columns.get_loc("Completed?") + 1  # 1-based
+    ws.append(["Corporate Vehicle Report"])
+    ws.append([""])
+    ws.append(["Total Vehicles in DMS:", total_dms])
+    ws.append(["Total Vehicles on Cars.co.za:", total_cars])
+    ws.append(["Total Vehicles on AutoTrader:", total_autotrader])
+    ws.append(["Total Vehicles on PMG Web:", total_pmgweb])
+    ws.append(["Total Vehicles to Remove:", total_to_remove])
+    ws.append([""])
 
-        dv = DataValidation(type="list", formula1='"Yes,No"', allow_blank=True)
-        ws.add_data_validation(dv)
+    # --- 📌 Breakdown by Dealership ---
+    ws.append(["Dealership", "Total Vehicles"])
+    row_start = ws.max_row + 1
 
-        # Apply to data rows => row 2.. row_count+1
-        from openpyxl.utils import get_column_letter
-        col_letter = get_column_letter(completed_ix)
-        for row in range(2, rows_count + 2):
-            cell_coord = f"{col_letter}{row}"
-            dv.add(cell_coord)
+    for dealer, prefix in DEALER_PREFIXES.items():
+        count = df_master[df_master["Stock Number"].str.startswith(prefix)].shape[0]
+        ws.append([dealer, count])
 
-        # 4) If 'Completed?' == 'Yes', entire row => green
-        last_col_letter = get_column_letter(cols_count)
-        rng = f"A2:{last_col_letter}{rows_count+1}"
-        formula_str = f'${col_letter}2="Yes"'
-        fill_green = PatternFill(start_color="C6EFCE", end_color="C6EFCE", fill_type="solid")
-        rule_green = FormulaRule(formula=[formula_str], fill=fill_green, stopIfTrue=False)
-        ws.conditional_formatting.add(rng, rule_green)
+    row_end = ws.max_row
 
+    # --- 📈 Bar Chart (Dealership Breakdown) ---
+    chart = BarChart()
+    chart.title = "Vehicle Count Per Dealership"
+    chart.x_axis.title = "Dealerships"
+    chart.y_axis.title = "Total Vehicles"
+    chart.width = 12
+    chart.height = 6
+
+    data = Reference(ws, min_col=2, min_row=row_start, max_row=row_end)
+    categories = Reference(ws, min_col=1, min_row=row_start + 1, max_row=row_end)
+    chart.add_data(data, titles_from_data=True)
+    chart.set_categories(categories)
+    ws.add_chart(chart, "E5")
+
+    # --- 📊 Pie Chart (Stock Distribution Across Websites) ---
+    pie = PieChart()
+    pie.title = "Stock Distribution on Websites"
+    pie_data = Reference(ws, min_col=2, min_row=3, max_row=6)  # Total stock numbers
+    pie_categories = Reference(ws, min_col=1, min_row=3, max_row=6)
+    pie.add_data(pie_data, titles_from_data=True)
+    pie.set_categories(pie_categories)
+    ws.add_chart(pie, "E15")
+
+    auto_size_columns(ws, df_master)  # ✅ Fixed: Passing df_master correctly
 
 def main():
-    src_folder = "src"
-    output_folder = "output"
+    src_folder, output_folder = "src", "output"
     os.makedirs(output_folder, exist_ok=True)
 
     print("[INFO] Reading DMS data...")
@@ -102,73 +106,55 @@ def main():
     pmg_set, pmg_prices = read_pmg_web_data(src_folder)
 
     print("[INFO] Building master dataset...")
-    df_master = build_master_df(
-        dms_map,
-        at_set, at_prices,
-        cars_set, cars_prices,
-        pmg_set, pmg_prices
-    )
-    df_master = reorder_final_columns(df_master)
-
-    print(f"[INFO] Total cars in master dataset: {df_master.shape}")
-
-    recognized_prefixes = tuple(DEALER_PREFIXES.values())
-
-    df_master["Stock Number"] = df_master["Stock Number"].astype(str)
-    df_in_dms = df_master[
-        (df_master["in_dms"]==True) &
-        df_master["Stock Number"].str.startswith(recognized_prefixes, na=False)
-    ].copy()
-
-    print(f"[INFO] Cars in DMS with recognized prefixes: {df_in_dms.shape}")
-
-    df_removed = df_master[
-        (df_master["in_dms"]==False) &
-        df_master["Stock Number"].str.startswith(recognized_prefixes, na=False)
-    ].copy()
-    remove_cols = [
-        "Stock Number",
-        "is_on_cars","cars_price",
-        "is_on_autotrader","autotrader_price",
-        "is_on_pmgWeb"
-    ]
-    df_removed = df_removed.reindex(columns=remove_cols)
-    df_removed = clean_dataframe(df_removed)
-
-    df_todos = generate_todos(df_in_dms, df_removed)
-    if not df_todos.empty and "Completed?" not in df_todos.columns:
-        df_todos["Completed?"] = ""
+    df_master = reorder_final_columns(build_master_df(
+        dms_map, at_set, at_prices, cars_set, cars_prices, pmg_set, pmg_prices
+    ))
 
     out_file = os.path.join(output_folder, "stockgpt.xlsx")
     with pd.ExcelWriter(out_file, engine="openpyxl") as writer:
         sheet_count = 0
 
-        for dealer_name, prefix_val in DEALER_PREFIXES.items():
-            df_sub = df_in_dms[df_in_dms["Stock Number"].str.startswith(prefix_val)].copy()
+        # Write dealership sheets with table formatting
+        for dealer, prefix in DEALER_PREFIXES.items():
+            df_sub = df_master[df_master["Stock Number"].str.startswith(prefix)].copy()
             if not df_sub.empty:
-                df_sub.to_excel(writer, sheet_name=dealer_name, index=False)
+                df_sub.to_excel(writer, sheet_name=dealer, index=False)
                 sheet_count += 1
+
+        # Write to_be_removed (Minimal: Only website info + "Done?" Column)
+        df_removed = df_master[df_master["in_dms"] == False][
+            ["Stock Number", "is_on_cars", "is_on_autotrader", "is_on_pmgWeb"]
+        ].copy()
+        df_removed["Done?"] = ""
 
         if not df_removed.empty:
             df_removed.to_excel(writer, sheet_name="to_be_removed", index=False)
             sheet_count += 1
 
+        # Write to_dos (with "Done?" Column)
+        df_todos = generate_todos(df_master, df_removed)
         if not df_todos.empty:
+            df_todos["Done?"] = ""
             df_todos.to_excel(writer, sheet_name="to_dos", index=False)
             sheet_count += 1
 
+        # Add Corporate Report with Graphs
+        generate_corporate_report(writer, df_master)
+
+        # Apply table formatting to all sheets (SKIP "corporate_report")
         for sheet_name in writer.sheets.keys():
-            if sheet_name == "to_be_removed":
-                style_sheet(writer, sheet_name, df_removed)
-            elif sheet_name == "to_dos":
-                style_to_dos_sheet(writer, sheet_name, df_todos)
+            if sheet_name == "corporate_report":
+                continue  # ✅ FIX: Skip formatting for corporate_report
+
+            sheet = writer.sheets[sheet_name]
+            if sheet_name in ["to_be_removed", "to_dos"]:
+                style_sheet(writer, sheet_name, df_removed if sheet_name == "to_be_removed" else df_todos)
             else:
-                df_sub = df_in_dms[df_in_dms["Stock Number"].str.startswith(DEALER_PREFIXES[sheet_name])]
+                df_sub = df_master[df_master["Stock Number"].str.startswith(DEALER_PREFIXES[sheet_name])]
                 style_sheet(writer, sheet_name, df_sub)
 
-    print(f"[stockgpt] Wrote {sheet_count} sheets => {out_file}")
-    print("Dealership sheets, 'to_be_removed' & 'to_dos' included.")
-
+    print(f"[stockgpt] Wrote {sheet_count + 1} sheets => {out_file}")
+    print("Includes 'corporate_report' with charts & retains table formatting.")
 
 if __name__ == "__main__":
     main()
