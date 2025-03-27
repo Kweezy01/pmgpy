@@ -1,14 +1,17 @@
 "sep=,"
 ImageUrl,ListingId,StockNumber,RegistrationNumber,VehicleCategory,VehicleSubCategory,Make,Model,Variant,RegistrationYear,PriceFormatted,MileageValue,Status,LastModified,CreateDate,ListDate,Age,PriceRating
-https://img.autotrader.co.za/36315406/Crop160x120,27902523,UA7615,,Cars,,Nissan,Navara,2.5dCi double cab 4x4 LE auto,2013,R 229 900,251500,Active,2025/02/19 12:13:12,2025/02/19 12:13:12,2025/02/19 12:13:12,0,Fair Price
-https://img.autotrader.co.za/36051525/Crop160x120,27883510,UA7608,,Cars,,Volkswagen,Kombi,2.0TDI 75kW SWB Trendline,2015,R 319 900,156500,Active,2025/02/06 11:08:55,2025/02/06 11:08:55,2025/02/06 11:08:55,13,Fair Price
-https://img.autotrader.co.za/36045335/Crop160x120,27882950,UA7610,,Cars,,Volkswagen,Golf,1.0TSI Comfortline,2017,R 249 900,162000,Active,2025/02/06 10:31:00,2025/02/06 07:51:11,2025/02/06 10:31:00,13,High Price
-https://img.autotrader.co.za/35488493/Crop160x120,27842289,UA7531,,Cars,,Nissan,X-Trail,1.6dCi Visia,2020,R 329 900,74000,Active,2025/02/05 04:06:44,2025/01/10 08:45:02,2025/01/10 08:46:07,40,High Price
-https://img.autotrader.co.za/32969565/Crop160x120,27817703,UA7468,,Cars,,Nissan,Micra,66kW Turbo Visia,2021,R 199 900,43100,Active,2025/02/05 04:06:26,2024/12/13 05:41:01,2024/12/13 05:41:01,68,Great Price
-https://img.autotrader.co.za/35959771/Crop160x120,27877172,,,Cars,,Nissan,NP200,1.6i Safety Pack,2023,R 249 900,12500,Active,2025/02/03 12:45:19,2025/02/03 12:45:19,2025/02/03 12:45:19,16,High Price
-https://img.autotrader.co.za/35864590/Crop160x120,27870265,UA7604,,Cars,,Volkswagen,Polo Vivo,Hatch 1.6 Comfortline Auto,2021,R 249 900,65500,Active,2025/01/29 07:57:55,2025/01/29 07:57:55,2025/01/29 07:57:55,21,Fair Price
-https://img.autotrader.co.za/35852644/Crop160x120,27869514,NJ1072,,Cars,,JAC,T6,2.8TDi Double Cab Lux,2023,R 299 900,18000,Active,2025/01/28 14:55:45,2025/01/28 14:55:45,2025/01/28 14:55:45,22,No Rating
-https://img.autotrader.co.za/35557061/Crop160x120,27846891,UA7491,,Cars,,Honda,HR-V,1.5 Comfort,2019,R 259 900,83500,Active,2025/01/14 10:55:27,2025/01/14 10:55:27,2025/01/14 10:55:27,36,Fair Price
-https://img.autotrader.co.za/35150917/Crop160x120,27817750,UA7505,,Cars,,Nissan,Micra,84kW Turbo Acenta Plus,2019,R 174 900,118000,Active,2025/01/14 10:52:52,2024/12/13 07:23:02,2024/12/13 07:23:02,68,Great Price
-https://img.autotrader.co.za/32303525/Crop160x120,27607203,UA7458,,Cars,,Renault,Clio,66kW Turbo Authentique,2020,R 164 900,66000,Active,2025/01/14 10:43:43,2024/07/23 17:01:42,2024/07/25 15:18:18,211,Great Price
-https://img.autotrader.co.za/35491635/Crop160x120,27842691,UA7576,,Cars,,Nissan,Navara,2.5DDTi Double Cab LE,2022,R 499 900,87000,Active,2025/01/10 11:33:47,2025/01/10 11:33:47,2025/01/10 11:33:47,40,Fair Price
+https://img.autotrader.co.za/36859436/Crop160x120,27940545,UA7649,,Cars,,Isuzu,D-Max,1.9TD Double Cab L 4x4,2022,R 449 900,24000,Active,2025/03/21 02:06:18,2025/03/17 09:21:48,2025/03/17 09:21:48,10,Fair Price
+https://img.autotrader.co.za/36045335/Crop160x120,27882950,UA7610,,Cars,,Volkswagen,Golf,1.0TSI Comfortline,2017,R 229 900,162000,Active,2025/03/21 02:05:15,2025/02/06 07:51:11,2025/02/06 10:31:00,49,Fair Price
+https://img.autotrader.co.za/35491635/Crop160x120,27842691,UA7576,,Cars,,Nissan,Navara,2.5DDTi Double Cab LE,2022,R 479 900,87000,Active,2025/03/20 15:26:10,2025/01/10 11:33:47,2025/01/10 11:33:47,76,Fair Price
+https://img.autotrader.co.za/36958849/Crop160x120,27947569,UA7646,,Cars,,Volkswagen,Polo Vivo,Hatch 1.6 Comfortline Auto,2020,R 239 900,55000,Active,2025/03/20 15:22:49,2025/03/20 15:22:49,2025/03/20 15:22:49,7,Fair Price
+https://img.autotrader.co.za/36932569/Crop160x120,27945698,UA,,Cars,,Toyota,Land Cruiser 300,3.3D GX-R,2022,R 1 350 000,54000,Active,2025/03/19 15:47:59,2025/03/19 15:47:59,2025/03/19 15:47:59,8,Great Price
+https://img.autotrader.co.za/36931973/Crop160x120,27945652,UA7644,,Cars,,Renault,Sandero,Stepway 1.6,2020,R 189 900,180000,Active,2025/03/19 15:34:09,2025/03/19 15:34:09,2025/03/19 15:34:09,8,Fair Price
+https://img.autotrader.co.za/36931338/Crop160x120,27945623,UA7640,,Cars,,Toyota,Hilux,2.8GD-6 Double Cab 4x4 Raider,2018,R 559 900,128500,Active,2025/03/19 15:17:48,2025/03/19 15:17:48,2025/03/19 15:17:48,8,High Price
+https://img.autotrader.co.za/36875735/Crop160x120,27941791,UA7633,,Cars,,Honda,CR-V,2.0 Comfort,2018,R 269 900,177000,Active,2025/03/17 16:05:34,2025/03/17 16:05:34,2025/03/17 16:05:34,10,Fair Price
+https://img.autotrader.co.za/36862886/Crop160x120,27940984,UA7651,,Cars,,Nissan,Navara,2.5DDTi Double Cab PRO-2X,2024,R 599 900,30000,Active,2025/03/17 12:01:58,2025/03/17 12:01:58,2025/03/17 12:01:58,10,No Rating
+https://img.autotrader.co.za/36863021/Crop160x120,27940899,UA7642,,Cars,,Nissan,Navara,2.5DDTi Double Cab PRO-4X 4x4,2023,R 629 900,45000,Active,2025/03/17 11:35:28,2025/03/17 11:35:28,2025/03/17 11:35:28,10,Fair Price
+https://img.autotrader.co.za/36861927/Crop160x120,27940791,UA7647,,Cars,,Nissan,Navara,2.5DDTi Double Cab PRO-4X 4x4,2023,R 639 900,47500,Active,2025/03/17 10:56:54,2025/03/17 10:56:54,2025/03/17 10:56:54,10,Fair Price
+https://img.autotrader.co.za/36667477/Crop160x120,27927831,UA7614,,Cars,,Nissan,Magnite,1.0 Turbo Acenta Auto,2024,R 259 900,25500,Active,2025/03/07 14:07:03,2025/03/07 13:49:20,2025/03/07 13:49:21,20,No Rating
+https://img.autotrader.co.za/36581347/Crop160x120,27921634,UA7630,,Cars,,Mazda,Mazda2,1.5 Active,2019,R 189 900,110000,Active,2025/03/04 14:59:31,2025/03/04 14:59:31,2025/03/04 14:59:31,23,Fair Price
+https://img.autotrader.co.za/35959771/Crop160x120,27877172,UA7607,,Cars,,Nissan,NP200,1.6i Safety Pack,2023,R 249 900,12500,Active,2025/02/19 14:21:07,2025/02/03 12:45:19,2025/02/03 12:45:19,52,High Price
+https://img.autotrader.co.za/35864590/Crop160x120,27870265,UA7604,,Cars,,Volkswagen,Polo Vivo,Hatch 1.6 Comfortline Auto,2021,R 249 900,65500,Active,2025/01/29 07:57:55,2025/01/29 07:57:55,2025/01/29 07:57:55,57,Fair Price

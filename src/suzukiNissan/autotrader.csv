@@ -1,18 +1,16 @@
 "sep=,"
 ImageUrl,ListingId,StockNumber,RegistrationNumber,VehicleCategory,VehicleSubCategory,Make,Model,Variant,RegistrationYear,PriceFormatted,MileageValue,Status,LastModified,CreateDate,ListDate,Age,PriceRating
-https://img.autotrader.co.za/36314910/Crop160x120,27902480,UE2530,,Cars,,Volkswagen,T-Cross,1.0TSI 85kW Highline,2019,R 309 900,121000,Active,2025/02/19 11:59:39,2025/02/19 11:59:39,2025/02/19 11:59:39,0,Fair Price
-https://img.autotrader.co.za/36299207/Crop160x120,27901287,UE2529,,Cars,,Volkswagen,Polo Vivo,Hatch 1.4 Trendline,2018,R 169 900,132000,Active,2025/02/19 10:07:20,2025/02/18 16:07:43,2025/02/18 16:07:43,1,Fair Price
-https://img.autotrader.co.za/36310411/Crop160x120,27777353,NE5357,,Cars,,Suzuki,Swift,1.2 GLX CVT,2025,R 289 900,2000,Active,2025/02/19 10:02:43,2024/11/15 16:20:07,2024/11/15 16:20:07,96,No Rating
-https://img.autotrader.co.za/35408622/Crop160x120,27836432,UE2502,,Cars,,Suzuki,Jimny,1.5 GLX AllGrip,2020,R 309 900,63000,Active,2025/02/18 16:10:22,2025/01/06 14:43:47,2025/01/06 14:43:47,44,Great Price
-https://img.autotrader.co.za/36298994/Crop160x120,27785793,UE2464,,Cars,,Ford,Ranger,2.0 Sit Single Cab XL 4x4 Manual,2024,R 459 900,1500,Active,2025/02/18 16:00:00,2024/11/21 14:04:51,2024/11/21 14:04:51,90,Fair Price
-https://img.autotrader.co.za/36291306/Crop160x120,27900677,UE2528,,Cars,,Nissan,Juke,1.2T Acenta+,2015,R 169 900,92000,Active,2025/02/18 12:26:33,2025/02/18 12:26:33,2025/02/18 12:26:33,1,Fair Price
-https://img.autotrader.co.za/36216072/Crop160x120,27895047,UE2531,,Cars,,Toyota,Hilux,2.4GD S (Aircon),2020,R 339 900,114000,Active,2025/02/13 16:39:18,2025/02/13 16:39:08,2025/02/13 16:39:08,6,High Price
-https://img.autotrader.co.za/36215728/Crop160x120,27895022,UE2527,,Cars,,Toyota,Fortuner,2.8GD-6 4x4 Auto,2016,R 449 900,120000,Active,2025/02/13 16:31:19,2025/02/13 16:31:19,2025/02/13 16:31:19,6,Fair Price
-https://img.autotrader.co.za/36169525/Crop160x120,27891833,UE2491,,Cars,,Toyota,Vitz,1.0 Xr Auto,2023,R 199 900,4000,Active,2025/02/12 08:13:26,2025/02/12 08:13:26,2025/02/12 08:13:26,7,Great Price
-https://img.autotrader.co.za/36015150/Crop160x120,27880817,UE2506,,Cars,,Suzuki,S-Presso,1.0 GL+,2023,R 184 900,3100,Active,2025/02/05 07:52:30,2025/02/05 07:52:30,2025/02/05 07:52:30,14,High Price
-https://img.autotrader.co.za/36014418/Crop160x120,27880754,UE2522,,Cars,,Honda,WR-V,1.2 Elegance,2022,R 259 900,35000,Active,2025/02/05 07:20:42,2025/02/05 07:20:42,2025/02/05 07:20:42,14,Fair Price
-https://img.autotrader.co.za/34592841/Crop160x120,27777380,NE5387,,Cars,,Suzuki,Jimny,1.5 Glx Allgrip 5-door Auto,2025,R 499 900,2500,Active,2025/02/04 08:48:17,2024/11/15 16:30:28,2024/11/15 16:30:28,96,No Rating
-https://img.autotrader.co.za/35560017/Crop160x120,27847122,UE2505,,Cars,,Fiat,500X,1.4T Connect,2024,R 299 900,11000,Active,2025/01/17 07:37:42,2025/01/14 12:20:44,2025/01/14 12:20:44,36,No Rating
-https://img.autotrader.co.za/35634304/Crop160x120,27853972,UE2494,,Cars,,Mazda,CX-5,2.2DE AWD Akera,2018,R 349 900,118000,Active,2025/01/17 07:27:25,2025/01/17 07:27:25,2025/01/17 07:27:25,33,Fair Price
-https://img.autotrader.co.za/35072134/Crop160x120,27812350,UE2485,,Cars,,Suzuki,Super Carry,1.2,2023,R 149 900,20000,Active,2025/01/13 12:16:52,2024/12/10 11:09:10,2024/12/10 11:09:10,71,Great Price
-https://img.autotrader.co.za/34592575/Crop160x120,27777368,NE5370,,Cars,,Suzuki,S-Presso,1.0 GL+,2025,R 184 900,2000,Active,2025/01/09 13:57:46,2024/11/15 16:26:42,2024/11/15 16:26:42,96,No Rating
+https://img.autotrader.co.za/37051095/Crop160x120,27954009,UE2566,,Cars,,Kia,Picanto,1.0 STREET,2021,R 169 900,10500,Active,2025/03/26 10:50:56,2025/03/26 10:50:56,2025/03/26 10:50:56,1,Great Price
+https://img.autotrader.co.za/37050645/Crop160x120,27953964,UE2557,,Cars,,Suzuki,Swift,1.2 GL,2024,R 209 900,4000,Active,2025/03/26 10:40:28,2025/03/26 10:38:12,2025/03/26 10:38:12,1,No Rating
+https://img.autotrader.co.za/37050377/Crop160x120,27953949,UE2549,,Cars,,Suzuki,Vitara Brezza,1.5 GL S-Edition,2022,R 249 900,36000,Active,2025/03/26 10:30:08,2025/03/26 10:30:08,2025/03/26 10:30:08,1,Fair Price
+https://img.autotrader.co.za/36454024/Crop160x120,27912551,UE2543,,Cars,,Nissan,Magnite,1.0 Turbo Acenta Plus,2021,R 249 900,36500,Active,2025/03/21 02:06:59,2025/02/26 10:08:25,2025/02/26 10:08:25,29,High Price
+https://img.autotrader.co.za/36511028/Crop160x120,27916490,UE3544,,Cars,,Toyota,Vitz,1.0 XR Auto,2023,R 199 900,21000,Active,2025/03/21 02:06:50,2025/02/28 13:42:03,2025/02/28 13:42:25,27,Fair Price
+https://img.autotrader.co.za/36952641/Crop160x120,27947107,UE2548,,Cars,,Ford,Everest,2.0SiT XLT,2020,R 479 900,71500,Active,2025/03/20 12:58:32,2025/03/20 12:58:32,2025/03/20 12:58:32,7,Fair Price
+https://img.autotrader.co.za/36780847/Crop160x120,27935773,UE2555,,Cars,,Suzuki,S-Presso,1.0 GL+,2024,R 174 900,7400,Active,2025/03/13 08:05:32,2025/03/13 08:05:32,2025/03/13 08:05:32,14,Fair Price
+https://img.autotrader.co.za/36780651/Crop160x120,27935760,UE2508,,Cars,,Audi,A3,Sportback 35TFSI Advanced,2022,R 499 900,47500,Active,2025/03/13 07:51:28,2025/03/13 07:51:28,2025/03/13 07:51:28,14,Fair Price
+https://img.autotrader.co.za/36511258/Crop160x120,27916501,UE2534,,Cars,,Toyota,Starlet,1.4 XR Auto,2022,R 269 900,41500,Active,2025/02/28 13:48:05,2025/02/28 13:48:05,2025/02/28 13:48:05,27,Fair Price
+https://img.autotrader.co.za/36015150/Crop160x120,27880817,UE2506,,Cars,,Suzuki,S-Presso,1.0 GL+,2024,R 179 900,3100,Active,2025/02/27 13:41:08,2025/02/05 07:52:30,2025/02/05 07:52:30,50,Fair Price
+https://img.autotrader.co.za/36314910/Crop160x120,27902480,UE2530,,Cars,,Volkswagen,T-Cross,1.0TSI 85kW Highline,2019,R 309 900,121000,Active,2025/02/20 09:26:44,2025/02/19 11:59:39,2025/02/19 11:59:39,36,Fair Price
+https://img.autotrader.co.za/36310411/Crop160x120,27777353,NE5357,,Cars,,Suzuki,Swift,1.2 GLX CVT,2025,R 289 900,2000,Active,2025/02/19 10:02:43,2024/11/15 16:20:07,2024/11/15 16:20:07,132,No Rating
+https://img.autotrader.co.za/35634304/Crop160x120,27853972,UE2494,,Cars,,Mazda,CX-5,2.2DE AWD Akera,2018,R 349 900,118000,Active,2025/01/17 07:27:25,2025/01/17 07:27:25,2025/01/17 07:27:25,69,Fair Price
+https://img.autotrader.co.za/34592575/Crop160x120,27777368,NE5370,,Cars,,Suzuki,S-Presso,1.0 GL+,2025,R 184 900,2000,Active,2025/01/09 13:57:46,2024/11/15 16:26:42,2024/11/15 16:26:42,132,No Rating

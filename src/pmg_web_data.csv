@@ -1,7 +1,6 @@
 ﻿SKU,Name,Published,"Regular price"
 UA7458,"2020 Renault Clio IV 900T Authentique 5-dr (66kW)",1,164900
 UA7468,"2021 Nissan Micra 900T Visia",1,199900
-UA7505,"2019 Nissan Micra 900T Acenta Plus",1,149900
 US1968,"2015 Ford Kuga 2.0 TDCi Trend AWD Auto",1,199900
 UF8872,"2023 Ford Ranger 3.0D V6 Wildtrak AWD Double Cab Auto",1,819900
 UA7491,"2019 Honda HR-V 1.5 Comfort Auto",1,259900
@@ -11,7 +10,6 @@ UF8836,"2020 Mercedes-Benz A-Class A 200d Auto",1,429900
 UF8848,"2021 Volkswagen T-Cross 1.0 TSI Comfortline",1,269900
 UF8849,"2017 Toyota Hilux 2.8 GD-6 Raider 4x4 Double-Cab",1,469900
 UF8860,"2017 Ford Ranger 2.2 TDCi XL Double-Cab",1,289900
-UF8877,"2020 Mahindra KUV 100 1.2 K2+ Dare",1,139900
 UF8880,"2020 Toyota RAV4 2.0 GX Auto",1,379900
 NF12882,"2024 Ford Ranger 2.0D XLT Auto Double-Cab",1,699900
 US1890,"2014 Ford Kuga 1.6 EcoBoost Trend",1,189900
@@ -20,9 +18,39 @@ US1994,"2021 BMW 1 Series 118i Sport Line",1,449900
 US1993,"2020 Honda Jazz 1.2 Comfort",1,199900
 UF8760,"2021 Volkswagen Caravelle T6 2.0 BiTDI Highline Auto 4Motion",1,949900
 UF8826,"2018 Ford Ranger 3.2 TDCi XLT 4x4 Auto SuperCab",1,359900
-UF8862,"2024 Ford Ranger 2.0D Bi-Turbo XLT 4x4 Double Cab Auto",1,729900
-,"2024 Ford Ranger 2.0D XL 4x4 Double Cab Auto",'-1,
 UF8904,"2021 Ford Fiesta 1.0 Ecoboost Trend Auto 5-dr",1,259900
 UF8897,"2018 Suzuki Jimny 1.5 GLX",1,309900
 UA7607,"2023 Nissan NP200 1.6",1,249900
-UF8846,"2023 Ford EcoSport 1.0 EcoBoost Titanium Auto",1,319900
+UA7531,"2020 Nissan X-Trail 1.6 dCi Visia 7-seat",1,329900
+UA7596,"2022 Nissan NP200 1.6 A/C Safety Pack",1,209900
+UA7597,"2020 Ford Ranger 3.2 TDCi Wildtrak Auto Double-Cab",1,439900
+UA7604,"2021 Volkswagen Polo Vivo 1.6 Comfortline Auto 5-dr",1,249900
+UA7610,"2017 Volkswagen Golf VII 1.0 TSI Comfortline",1,249900
+UE2464,"2024 Ford Ranger 2.0D XL HR 4x4 Single-Cab",1,499900
+UE2491,"2023 Toyota Vitz 1.0 XR AMT",1,199900
+UE2517,"2020 Suzuki Ignis 1.2 GLX",1,189900
+UE2494,"2018 Mazda CX-5 2.2 DE Akera Auto AWD",1,349900
+UE2502,"2020 Suzuki Jimny 1.5 GLX",1,309900
+UE2505,"2024 Fiat 500X 1.4T Connect",1,299900
+UE2506,"2025 Suzuki S-Presso 1.0 GL+",1,199900
+UE2522,"2022 Honda WR-V 1.2 Elegance",1,259900
+UE2531,"2020 Toyota Hilux 2.4 GD S Single-Cab",1,329900
+UE2529,"2018 Volkswagen Polo Vivo 1.4 Trendline 5-dr",1,169900
+UE2527,"2016 Toyota Fortuner 2.8 GD-6 4x4 Auto",1,449900
+UE2528,"2015 Nissan Juke 1.2T Acenta+",1,169900
+UF8876,"2023 Ford Ranger 3.0D V6 Wildtrak AWD Double Cab Auto",1,829900
+UF8884,"2019 Ford EcoSport 1.0 EcoBoost Trend",1,209900
+UF8891,"2022 Ford Ranger 2.0D Bi-Turbo Raptor 4x4 Auto Double-Cab",1,699900
+UF8913,"2020 Ford Ranger 2.2 TDCi XL 4x4 Auto Double-Cab",1,399900
+UF8915,"2017 Toyota Corolla Quest 1.6 Auto",1,179900
+UG5308,"2010 Toyota Land Cruiser Prado 4.0 V6 VX Auto",1,259900
+UG5336,"2023 Toyota Vitz 1.0 XR AMT",1,199900
+UG5339,"2016 Mitsubishi Pajero 3.2 Di-Dc GLS Auto",1,389900
+UG5347,"2013 Toyota Fortuner 3.0 D-4D 4x4",1,299900
+UG5353,"2016 Toyota Land Cruiser 79 4.5 D Double-Cab",1,779900
+UG5359,"2014 Ford Ranger 3.2 TDCi XLT 4x4 Auto Double-Cab",1,259900
+UG5361,"2020 Mazda CX-3 2.0 Active",1,234900
+UG5365,"2008 Mitsubishi Pajero 3.2 Di-Dc GLS Auto",1,229900
+UG5371,"2018 Opel Adam 1.0T Jam",1,179900
+UG5372,"2021 Mazda CX-5 2.0 Active Auto",1,364900
+UG5377,"2021 Volkswagen T-Roc 2.0 TSI Design 4Motion Auto",1,399000
