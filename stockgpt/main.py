@@ -1,30 +1,18 @@
 #!/usr/bin/env python3
-"""
-main.py - Generates stockgpt.xlsx with:
- - Dealer-specific sheets (based on stock number prefix)
- - to_be_removed: Vehicles listed on web but not in DMS
- - to_dos: Vehicles missing from one or more websites
- - corporate_report: Summary stats & graphs
-
-Ready for:
- - MySQL integration (future)
- - UI tracking (future)
-"""
-
 import os
 import pandas as pd
 import warnings
-from openpyxl.chart import BarChart, PieChart, Reference
-from utilities import clean_dataframe
-from openpyxl.styles import PatternFill
-from .data_readers import read_dms_dict, read_autotrader_data, read_cars_data, read_pmg_web_data
-from .transformations import build_master_df, reorder_final_columns, generate_todos
-from .formatting import style_sheet, auto_size_columns
+from .utilities import clean_dataframe
+from .data_readers import read_all_sources
+from .transformations import (
+    build_master_df, reorder_columns, split_dms_by_prefix, generate_site_sheets,
+    generate_to_upload, generate_to_remove
+)
+from .formatting import style_sheet, auto_size_columns, generate_corporate_report
 
-# Suppress OpenPyXL formatting warnings
 warnings.simplefilter("ignore", UserWarning)
 
-# Dealer prefixes map
+OUTPUT_FILE = "output/stockgpt.xlsx"
 DEALER_PREFIXES = {
     "Ford_Nelspruit":   "UF",
     "Ford_Mazda":       "UG",
@@ -33,97 +21,41 @@ DEALER_PREFIXES = {
     "Ford_Malalane":    "US",
 }
 
-def generate_corporate_report(writer, df_master):
-    ws = writer.book.create_sheet("corporate_report")
-
-    # Key stats
-    counts = {
-        "DMS Stock": df_master[df_master["in_dms"]].shape[0],
-        "Cars.co.za": df_master[df_master["is_on_cars"] == "Yes"].shape[0],
-        "AutoTrader": df_master[df_master["is_on_autotrader"] == "Yes"].shape[0],
-        "PMG Web": df_master[df_master["is_on_pmgWeb"] == "Yes"].shape[0],
-        "To Be Removed": df_master[~df_master["in_dms"]].shape[0],
-    }
-
-    ws.append(["Corporate Vehicle Report"])
-    ws.append([""])
-    for k, v in counts.items():
-        ws.append([k, v])
-    ws.append([""])
-    ws.append(["Dealership", "Stock Count"])
-
-    row_start = ws.max_row + 1
-    for dealer, prefix in DEALER_PREFIXES.items():
-        count = df_master[df_master["Stock Number"].str.startswith(prefix)].shape[0]
-        ws.append([dealer, count])
-    row_end = ws.max_row
-
-    # Bar chart
-    bar = BarChart()
-    bar.title = "Vehicles Per Dealership"
-    bar_data = Reference(ws, min_col=2, min_row=row_start, max_row=row_end)
-    bar_labels = Reference(ws, min_col=1, min_row=row_start + 1, max_row=row_end)
-    bar.add_data(bar_data, titles_from_data=True)
-    bar.set_categories(bar_labels)
-    bar.width, bar.height = 12, 6
-    ws.add_chart(bar, "E5")
-
-    # Pie chart
-    pie = PieChart()
-    pie.title = "Web Presence Distribution"
-    pie_data = Reference(ws, min_col=2, min_row=3, max_row=5)
-    pie_labels = Reference(ws, min_col=1, min_row=3, max_row=5)
-    pie.add_data(pie_data, titles_from_data=True)
-    pie.set_categories(pie_labels)
-    ws.add_chart(pie, "E15")
-
-    auto_size_columns(ws, df_master)
-
 def main():
-    src = "src"
-    out = "output"
-    os.makedirs(out, exist_ok=True)
+    os.makedirs("output", exist_ok=True)
 
-    print("[INFO] Reading DMS...")
-    dms = read_dms_dict(os.path.join(src, "pmg_dms_data.csv"))
-    print(f"[INFO] DMS vehicles: {len(dms)}")
+    dms_map, at_set, at_prices, cars_set, cars_prices, pmg_set, pmg_prices = read_all_sources()
+    df_master = reorder_columns(build_master_df(dms_map, at_set, at_prices, cars_set, cars_prices, pmg_set, pmg_prices))
 
-    print("[INFO] Reading website data...")
-    at_set, at_prices = read_autotrader_data(src)
-    cars_set, cars_prices = read_cars_data(src)
-    pmg_set, pmg_prices = read_pmg_web_data(src)
-
-    print("[INFO] Building dataset...")
-    df_master = reorder_final_columns(build_master_df(
-        dms, at_set, at_prices, cars_set, cars_prices, pmg_set, pmg_prices
-    ))
-
-    with pd.ExcelWriter(os.path.join(out, "stockgpt.xlsx"), engine="openpyxl") as writer:
-        # Dealer sheets
-        for dealer, prefix in DEALER_PREFIXES.items():
-            df = df_master[df_master["Stock Number"].str.startswith(prefix)]
+    with pd.ExcelWriter(OUTPUT_FILE, engine="openpyxl") as writer:
+        for name, prefix in DEALER_PREFIXES.items():
+            df = split_dms_by_prefix(df_master, prefix)
             if not df.empty:
-                df.to_excel(writer, sheet_name=dealer, index=False)
-                style_sheet(writer, dealer, df)
+                df.drop(columns=["Date In Stock", "Branch", "Body Style", "Transmission", "Fuel Type"], errors="ignore", inplace=True)
+                sheet_name = f"DMS_{name}"
+                df.to_excel(excel_writer=writer, sheet_name=sheet_name, index=False)
+                style_sheet(writer, sheet_name, df)
 
-        # to_be_removed sheet
-        df_rem = df_master[~df_master["in_dms"]][
-            ["Stock Number", "is_on_cars", "cars_price", "is_on_autotrader", "autotrader_price", "is_on_pmgWeb"]
-        ].copy()
-        df_rem["Done?"] = ""
-        df_rem.to_excel(writer, sheet_name="to_be_removed", index=False)
-        style_sheet(writer, "to_be_removed", df_rem)
+        at_df, cars_df = generate_site_sheets(df_master)
+        at_df.to_excel(excel_writer=writer, sheet_name="AutoTrader_Listings", index=False)
+        cars_df.to_excel(excel_writer=writer, sheet_name="Cars_Listings", index=False)
+        style_sheet(writer, "AutoTrader_Listings", at_df)
+        style_sheet(writer, "Cars_Listings", cars_df)
 
-        # to_dos sheet
-        df_todo = generate_todos(df_master, df_rem)
-        df_todo["Done?"] = ""
-        df_todo.to_excel(writer, sheet_name="to_dos", index=False)
-        style_sheet(writer, "to_dos", df_todo)
+        df_upload = generate_to_upload(df_master)
+        df_remove, df_remove_others = generate_to_remove(df_master)
 
-        # Corporate report
+        df_upload.to_excel(excel_writer=writer, sheet_name="To_Upload", index=False)
+        df_remove.to_excel(excel_writer=writer, sheet_name="To_Remove", index=False)
+        df_remove_others.to_excel(excel_writer=writer, sheet_name="to_remove_others", index=False)
+
+        style_sheet(writer, "To_Upload", df_upload)
+        style_sheet(writer, "To_Remove", df_remove)
+        style_sheet(writer, "to_remove_others", df_remove_others)
+
         generate_corporate_report(writer, df_master)
 
-    print("[DONE] Excel generated with all sheets & corporate report.")
+    print("[✔] Excel workbook generated:", OUTPUT_FILE)
 
 if __name__ == "__main__":
     main()
