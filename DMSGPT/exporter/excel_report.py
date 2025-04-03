@@ -142,6 +142,12 @@ def write_master_excel(dms_data: pd.DataFrame,
         ) & ~dms_data["Stock Number"].isin(pmg_web_data.get("Stock Number", pd.Series()))
     ].copy()
 
+    upload_cols = [
+        "Stock Number", "Make", "Model", "Specification", "Colour",
+        "Registration Date", "VIN", "Odometer"
+    ]
+    to_upload_web = to_upload_web[[col for col in upload_cols if col in to_upload_web.columns]]
+
     if not to_upload_web.empty:
         ws_up_web = wb.create_sheet("Upload_to_PMGWeb")
         for row in dataframe_to_rows(to_upload_web, index=False, header=True):
