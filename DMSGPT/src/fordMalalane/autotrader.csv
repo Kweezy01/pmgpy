@@ -1,13 +1,13 @@
 "sep=,"
 ImageUrl,ListingId,StockNumber,RegistrationNumber,VehicleCategory,VehicleSubCategory,Make,Model,Variant,RegistrationYear,PriceFormatted,MileageValue,Status,LastModified,CreateDate,ListDate,Age,PriceRating
-https://img.autotrader.co.za/36655638/Crop160x120,27926947,US2010,,Cars,,Volkswagen,Polo Vivo,Hatch 1.6 Comfortline Auto,2023,R 249 900,29000,Active,2025/03/21 02:04:51,2025/03/07 08:34:15,2025/03/07 08:34:15,24,Great Price
-https://img.autotrader.co.za/36960148/Crop160x120,27947644,US2023,,Cars,,Honda,HR-V,1.5 Comfort,2019,R 229 900,83500,Active,2025/03/21 02:02:20,2025/03/20 15:48:57,2025/03/20 15:48:57,11,Fair Price
-https://img.autotrader.co.za/34407291/Crop160x120,27765154,US1968,,Cars,,Ford,Kuga,2.0TDCi AWD Trend,2015,R 199 900,140000,Active,2025/03/21 02:02:00,2024/11/07 14:59:22,2024/11/07 14:59:22,144,Fair Price
-https://img.autotrader.co.za/35610551/Crop160x120,27852374,US1994,,Cars,,BMW,1 Series,118i Sport Line,2021,R 449 900,67500,Active,2025/03/21 02:00:53,2025/01/16 09:17:23,2025/01/16 09:17:23,74,Fair Price
-https://img.autotrader.co.za/36655887/Crop160x120,27926963,US2009,,Cars,,Volkswagen,Polo Vivo,Hatch 1.4 Trendline,2024,R 229 900,38000,Active,2025/03/07 08:39:00,2025/03/07 08:39:00,2025/03/07 08:39:00,24,Fair Price
-https://img.autotrader.co.za/36655396/Crop160x120,27926935,US2008,,Cars,,Volkswagen,Polo,Sedan 1.6 Life Auto,2023,R 299 900,31000,Active,2025/03/07 08:27:52,2025/03/07 08:27:52,2025/03/07 08:27:52,24,Great Price
-https://img.autotrader.co.za/36654611/Crop160x120,27926881,US2011,,Cars,,Volkswagen,Polo Vivo,Hatch 1.4 Trendline,2023,R 219 900,46000,Active,2025/03/07 08:06:00,2025/03/07 08:06:00,2025/03/07 08:06:00,24,Fair Price
-https://img.autotrader.co.za/36654342/Crop160x120,27926863,US2007,,Cars,,Volkswagen,Polo Vivo,Hatch 1.4 Trendline,2024,R 229 900,27000,Active,2025/03/07 07:58:20,2025/03/07 07:58:20,2025/03/07 07:58:20,24,Fair Price
-https://img.autotrader.co.za/36654264/Crop160x120,27926852,US2015,,Cars,,Suzuki,Swift,1.2 GL,2023,R 169 900,20500,Active,2025/03/07 07:49:34,2025/03/07 07:49:34,2025/03/07 07:49:34,24,Low Price
-https://img.autotrader.co.za/36654104/Crop160x120,27926841,US2014,,Cars,,Ford,EcoSport,1.5 Ambiente Auto,2022,R 239 900,239900,Active,2025/03/07 07:38:34,2025/03/07 07:38:34,2025/03/07 07:38:34,24,Fair Price
-https://img.autotrader.co.za/35788379/Crop160x120,27864926,US1984,,Cars,,Volkswagen,T-Cross,1.0TSI 85kW Comfortline,2023,R 349 900,43000,Active,2025/02/20 13:20:25,2025/01/24 13:10:16,2025/01/24 13:10:16,66,Fair Price
+https://img.autotrader.co.za/36655638/Crop160x120,27926947,US2010,,Cars,,Volkswagen,Polo Vivo,Hatch 1.6 Comfortline Auto,2023,R 249 900,29000,Active,2025/03/21 02:04:51,2025/03/07 08:34:15,2025/03/07 08:34:15,27,Great Price
+https://img.autotrader.co.za/36960148/Crop160x120,27947644,US2023,,Cars,,Honda,HR-V,1.5 Comfort,2019,R 229 900,83500,Active,2025/03/21 02:02:20,2025/03/20 15:48:57,2025/03/20 15:48:57,14,Fair Price
+https://img.autotrader.co.za/34407291/Crop160x120,27765154,US1968,,Cars,,Ford,Kuga,2.0TDCi AWD Trend,2015,R 199 900,140000,Active,2025/03/21 02:02:00,2024/11/07 14:59:22,2024/11/07 14:59:22,147,Fair Price
+https://img.autotrader.co.za/35610551/Crop160x120,27852374,US1994,,Cars,,BMW,1 Series,118i Sport Line,2021,R 449 900,67500,Active,2025/03/21 02:00:53,2025/01/16 09:17:23,2025/01/16 09:17:23,77,Fair Price
+https://img.autotrader.co.za/36655887/Crop160x120,27926963,US2009,,Cars,,Volkswagen,Polo Vivo,Hatch 1.4 Trendline,2024,R 229 900,38000,Active,2025/03/07 08:39:00,2025/03/07 08:39:00,2025/03/07 08:39:00,27,Fair Price
+https://img.autotrader.co.za/36655396/Crop160x120,27926935,US2008,,Cars,,Volkswagen,Polo,Sedan 1.6 Life Auto,2023,R 299 900,31000,Active,2025/03/07 08:27:52,2025/03/07 08:27:52,2025/03/07 08:27:52,27,Great Price
+https://img.autotrader.co.za/36654611/Crop160x120,27926881,US2011,,Cars,,Volkswagen,Polo Vivo,Hatch 1.4 Trendline,2023,R 219 900,46000,Active,2025/03/07 08:06:00,2025/03/07 08:06:00,2025/03/07 08:06:00,27,Fair Price
+https://img.autotrader.co.za/36654342/Crop160x120,27926863,US2007,,Cars,,Volkswagen,Polo Vivo,Hatch 1.4 Trendline,2024,R 229 900,27000,Active,2025/03/07 07:58:20,2025/03/07 07:58:20,2025/03/07 07:58:20,27,Fair Price
+https://img.autotrader.co.za/36654264/Crop160x120,27926852,US2015,,Cars,,Suzuki,Swift,1.2 GL,2023,R 169 900,20500,Active,2025/03/07 07:49:34,2025/03/07 07:49:34,2025/03/07 07:49:34,27,Low Price
+https://img.autotrader.co.za/36654104/Crop160x120,27926841,US2014,,Cars,,Ford,EcoSport,1.5 Ambiente Auto,2022,R 239 900,239900,Active,2025/03/07 07:38:34,2025/03/07 07:38:34,2025/03/07 07:38:34,27,Fair Price
+https://img.autotrader.co.za/35788379/Crop160x120,27864926,US1984,,Cars,,Volkswagen,T-Cross,1.0TSI 85kW Comfortline,2023,R 349 900,43000,Active,2025/02/20 13:20:25,2025/01/24 13:10:16,2025/01/24 13:10:16,69,Fair Price
